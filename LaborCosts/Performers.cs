@@ -17,6 +17,7 @@ namespace LaborCosts
         public int Id { get; set; }
         public int IdTask { get; set; }
         public int IdUser { get; set; }
+        public Nullable<int> Hours { get; set; }
     
         public virtual Task Task { get; set; }
         public virtual User User { get; set; }
