@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="df7093b065f849119da563beb9f0bfc6" Name="Diagram1">
+        <EntityTypeShape EntityType="LaborCostsModel.ContactPerson" Width="1.5" PointX="8.125" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.Customer" Width="1.5" PointX="5.625" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.LaborCosts" Width="1.5" PointX="5.625" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.Performers" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.Position" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.Project" Width="1.5" PointX="5.625" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.Role" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.Status" Width="1.5" PointX="8.125" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.Task" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaborCostsModel.User" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="LaborCostsModel.FK_ContactPerson_ToCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_Project_ToCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_LaborCosts_ToProject" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_Performers_ToTask" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_Performers_ToUser" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_User_ToPosition" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_Project_ToStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_Task_ToProject" ManuallyRouted="false" />
+        <AssociationConnector Association="LaborCostsModel.FK_User_ToRole" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
